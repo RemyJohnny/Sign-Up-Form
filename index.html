@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sign_Up_page</title>
+</head>
+<body>
+
+<div class="GeneralContainer">
+    <div class="Information">
+        <div class="svgLogo">
+            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"  viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg"><g fill="#ffffff" fill-rule="nonzero" transform="matrix(.108 0 0 .108 145 65)"><path d="m764.48 1050.52 485.52-485.52 485.75 485.73 282.5-282.5-768.25-768.23-768 768 282.49 282.5m-764.49 199.5 282.51-282.55 282.49 282.49-282.51 282.51zm764.48 199.51 485.52 485.49 485.74-485.72 282.65 282.35-.14.15-768.25 768.22-768.4-768.4 282.91-282.12m1170.49-199.36 282.51-282.51 282.49 282.49-282.5 282.51z"/><path d="m1536.52 1249.85h.12l-286.64-286.66-211.87 211.81-24.34 24.35-50.2 50.21-.4.39.4.41 286.41 286.45 286.66-286.66.14-.16-.26-.14"/></g></svg>
+            <div class="logoLabel">REMYSWAP.inc</div>
+        </div>
+        <div class="info">
+            This is not a real online service! There may be people who have more talent than you,but there's no excuse for anyone to work harder than you do. Sign up now to get started    
+        </div>
+        <button id="btn">HAVE AN ACCOUNT</button>
+
+    </div>
+
+    <div class="RegisterForm">
+
+        <form action="" method="get">
+            <h3>register now</h3>
+        <ul>
+            <li>
+                <label for="FirstName">FIRST NAME</label>
+                <input type="text" name="FirstName" id="FirstName" autocomplete="given-name" placeholder="your name">
+            </li>
+            <li>
+                <label for="LastName">LAST NAME</label>
+                <input type="text" name="LastName" id="LastName" autocomplete="family-name" placeholder="surname">
+            </li>
+            <li>
+                <label for="Email">EMAIL</label>
+                <input type="email" name="Email" id="Email" autocomplete="email" placeholder="sample@gmail.com">
+            </li>
+            <li>
+                <label for="PhoneNumber">PHONE NUMBER</label>
+                <input type="tel" name="PhoneNumber" id="PhoneNumber" maxlength="20" placeholder="+375 765 36 57">
+            </li>
+            <li>
+                <label for="Password">PASSWORD</label>
+                <span class="error"></span>
+                <input type="password" name="Password" id="Password" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@!#$&*?%^~])[A-Za-z\d@!#$&*?%^~]{6,12}" required>
+            </li>
+            <li>
+                <label for="ConfirmPassword">CONFIRM PASSWORD</label>
+                <span class="error"></span>
+                <input type="password" name="ConfirmPassword" id="ConfirmPassword" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@!#$&*?%^~])[A-Za-z\d@!#$&*?%^~]{6,12}" required>
+            </li>
+            <p class="help">Your PASSWORD must be minimum six and maximum 12 characters, at least 1 uppercase letter, 1 lowercase letter, one number and one special character</p>
+        </ul>
+        <div  class="CreateAccout">
+            
+            <button type="submit" class="createAccount">Create Account</button>
+            <span class="log">already have an Accout? <a href="#">Log in</a></span>
+        </div>
+        </form>
+    </div>
+
+</div>
+   <script src="./index.js"></script> 
+</body>
+</html>
